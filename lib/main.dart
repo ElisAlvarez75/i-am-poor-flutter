@@ -7,10 +7,18 @@ void main() {
         backgroundColor: Colors.grey,
         title: Text('I am Poor'),
       ),
-      body: Center(
-        child: Image(
-          image: AssetImage('images/house.jpg'),
-        ),
+      body: Column(
+        children: [
+          Center(
+            child: Text('I am Poor'),
+          ),
+          Icon(Icons.attach_money),
+          Center(
+            child: Image(
+              image: AssetImage('images/house.jpg'),
+            ),
+          ),
+        ],
       ),
     ),
   ));
